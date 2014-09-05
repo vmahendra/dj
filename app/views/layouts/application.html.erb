@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dj</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+	<div class="nav">
+	<ul>
+		<li><a href="/welcome/index">section1</a></li>
+		<li><a href="#sec1">section2</a>
+			<ul>
+				<li><a href="/welcome/dropdown1">dropdown1</a></li>
+				<li><a href="/welcome/dropdown2">dropdown2</a></li>
+				<li><a href="/welcome/dropdown3">dropdown3</a></li>
+			</ul>
+			</li>
+		<li><a href="/welcome/section3">section3</a></li>
+		<li><a href="/welcome/section4">section4</a></li>
+		<li><a href="/welcome/section5">section5</a></li>
+		<li><a class="img" target="_" href ="https://www.facebook.com/"><img align="center" style="height:25px;" src="/assets/fb.png"></a></li>
+		<li><a class="img1" target="_" href="https://www.twitter.com"><img align="center" style="height:25px;" src="/assets/tw.png"></a></li>
+		</ul>
+		</div> <!--nav end-->
+		</div>
+<%= yield %>
+
+		<p align="center">&copy copyright </p>
+
+
+</body>
+</html>
